@@ -5,6 +5,9 @@ lvim.format_on_save = true
 lvim.lint_on_save = true
 lvim.colorscheme = "nord"
 
+-- set relative line number
+vim.opt.relativenumber = true
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
