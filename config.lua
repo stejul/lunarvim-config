@@ -5,9 +5,6 @@ lvim.format_on_save = true
 lvim.lint_on_save = true
 lvim.colorscheme = "nord"
 
--- set relative line number
-vim.opt.relativenumber = true
-
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
@@ -87,7 +84,24 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     }
 -- }
 lvim.plugins = {
-  {"shaunsingh/nord.nvim"}
+  {"shaunsingh/nord.nvim"},
+  {"lukas-reineke/indent-blankline.nvim",
+    config = function()
+      require("indent_blankline").setup {
+        char = "⋅",
+        space_char_blankline = " ",
+        show_end_of_line = true,
+      }
+    end,
+  }
+}
+
+-- set relative line number
+vim.opt.relativenumber = true
+
+-- lukas-reineke/indent-blankline.nvim CONFIG
+vim.opt.listchars = {
+  space = "⋅",
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
