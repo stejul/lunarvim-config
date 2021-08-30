@@ -99,7 +99,7 @@ _G.packer_plugins = {
     path = "/home/smikic/.local/share/lunarvim/site/pack/packer/opt/gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
-    config = { "\27LJ\2\2w\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\3\25space_char_blankline\6 \21show_end_of_line\2\tchar\b⋅\nsetup\21indent_blankline\frequire\0" },
+    config = { "\27LJ\2\2N\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\tchar\b⋅\nsetup\21indent_blankline\frequire\0" },
     loaded = true,
     path = "/home/smikic/.local/share/lunarvim/site/pack/packer/start/indent-blankline.nvim"
   },
@@ -218,7 +218,7 @@ try_loadstring("\27LJ\2\2�\1\0\0\2\0\a\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\
 time([[Config for vim-rooter]], false)
 -- Config for: indent-blankline.nvim
 time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\2w\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\3\25space_char_blankline\6 \21show_end_of_line\2\tchar\b⋅\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
+try_loadstring("\27LJ\2\2N\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\tchar\b⋅\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
