@@ -3,7 +3,13 @@
 -- general
 lvim.format_on_save = true
 lvim.lint_on_save = true
-lvim.colorscheme = "nord"
+-- tokyonight settings
+vim.g.tokyonight_style = "storm"
+vim.g.tokyonight_italic_functions = true
+
+-- Set colorscheme
+lvim.colorscheme = "tokyonight"
+
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -93,7 +99,8 @@ lvim.plugins = {
         -- show_end_of_line = true,
       }
     end,
-  }
+  },
+  {"folke/tokyonight.nvim"},
 }
 
 -- set relative line number
