@@ -5,7 +5,6 @@ lvim.format_on_save = true
 lvim.lint_on_save = true
 -- tokyonight settings
 vim.g.tokyonight_style = "storm"
-vim.g.tokyonight_italic_functions = true
 
 -- Set colorscheme
 lvim.colorscheme = "tokyonight"
@@ -24,6 +23,12 @@ lvim.keys.normal_mode = {
     ["<C-j>"] = "<C-w>j",
     ["<C-k>"] = "<C-w>k",
     ["<C-l>"] = "<C-w>l",
+}
+
+lvim.builtin.which_key.mappings["t"] =  {
+  name = "Telescope",
+  -- live grep only works with ripgrep
+  f = {"<cmd>Telescope live_grep<cr>", "Live grep"},
 }
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
