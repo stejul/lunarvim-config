@@ -9,7 +9,6 @@ vim.g.tokyonight_style = "storm"
 -- Set colorscheme
 lvim.colorscheme = "tokyonight"
 
-
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
@@ -29,6 +28,7 @@ lvim.builtin.which_key.mappings["t"] =  {
   name = "Telescope",
   -- live grep only works with ripgrep
   f = {"<cmd>Telescope live_grep<cr>", "Live grep"},
+  g = {"<cmd> Telescope find_files hidden=true<cr>", "Search Files excluding ignore"} -- Performs file search, which excludes ignore files (.gitignore, .dockerignore, etc.)
 }
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
