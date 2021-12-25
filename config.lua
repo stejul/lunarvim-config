@@ -1,7 +1,7 @@
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-vim.g.tokyonight_style = "storm"
+vim.g.tokyonight_style = "night"
 
 lvim.lsp.automatic_servers_installation = true
 
@@ -64,6 +64,11 @@ lvim.plugins = {
     end,
   },
   {"folke/tokyonight.nvim"},
+  {"norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
 }
 
 -- set relative line number
