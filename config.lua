@@ -30,12 +30,13 @@ lvim.builtin.which_key.mappings["t"] =  {
   f = {"<cmd>Telescope live_grep<cr>", "Live grep"},
   g = {"<cmd> Telescope find_files hidden=true<cr>", "Search Files excluding ignore"} -- Performs file search, which excludes ignore files (.gitignore, .dockerignore, etc.)
 }
-lvim.builtin.dashboard.active = true
+--lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.notify.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 1
-lvim.builtin.nvimtree.hide_dotfiles = 0
+-- lvim.builtin.nvimtree.hide_dotfiles = 0
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
